@@ -72,7 +72,7 @@ if saldo_total_acumulado >= meta_mobilia:
     st.success("🎉 Excelente! O saldo acumulado já cobre totalmente a compra da cozinha e do closet em janeiro!")
 elif saldo_total_acumulado > 0:
     falta_meta = meta_mobilia - saldo_total_acumulado
-    st.info(p=f"💡 Faltam **R$ {falta_meta:,.2f}** acumulados para atingir o teto de R$ 5.000,00. Cada gasto extra reduz essa sobra!")
+    st.info(f"💡 Faltam **R$ {falta_meta:,.2f}** acumulados para atingir o teto de R$ 5.000,00. Cada gasto extra reduz essa sobra!")
 else:
     st.warning("⚠️ Atenção: As saídas do mês ultrapassaram as entradas. É preciso segurar os gastos para construir o saldo da mobília!")
 
